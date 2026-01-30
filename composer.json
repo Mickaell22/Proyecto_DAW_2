@@ -1,0 +1,13 @@
+{
+    "name": "proyecto/libreria-online",
+    "description": "Librería Online - Proyecto DAW",
+    "type": "project",
+    "require": {
+        "php": ">=8.0",
+        "ext-pdo": "*",
+        "ext-pdo_mysql": "*"
+    },
+    "scripts": {
+        "start": "php -S 0.0.0.0:8080"
+    }
+}
