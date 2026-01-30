@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Librería Online</title>
+    <title>Librería Patty</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header class="navbar">
         <div class="container">
-            <a href="index.php" class="logo">Librería Online</a>
+            <a href="index.php" class="logo">Librería Patty</a>
             <nav>
                 <a href="index.php">Catálogo</a>
                 <?php if (isset($_SESSION['usuario_id'])): ?>
