@@ -1,30 +1,42 @@
 <?php require_once __DIR__ . '/../layouts/header.php'; ?>
 
 <section class="auth-section">
-    <div class="auth-card">
-        <h1>Iniciar Sesión</h1>
+    <div class="auth-container">
+        <div class="auth-image-side">
+            <div class="icon-books">📚</div>
+            <h2>Bienvenido de vuelta</h2>
+            <p class="frase">"Un lector vive mil vidas antes de morir. El que nunca lee vive solo una."</p>
+            <p class="autor-frase">- George R.R. Martin</p>
+        </div>
 
-        <?php if (isset($error)): ?>
-            <div class="alerta error"><?php echo htmlspecialchars($error); ?></div>
-        <?php endif; ?>
+        <div class="auth-form-side">
+            <div class="auth-card">
+                <h1>Iniciar Sesion</h1>
+                <p class="subtitulo">Accede a tu cuenta</p>
 
-        <form method="POST" action="index.php?controller=auth&action=login" id="form-login">
-            <div class="form-grupo">
-                <label for="email">Correo electrónico</label>
-                <input type="email" id="email" name="email" required>
+                <?php if (isset($error)): ?>
+                    <div class="alerta error"><?php echo htmlspecialchars($error); ?></div>
+                <?php endif; ?>
+
+                <form method="POST" action="index.php?controller=auth&action=login" id="form-login">
+                    <div class="form-grupo">
+                        <label for="email">Correo electronico</label>
+                        <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                    </div>
+
+                    <div class="form-grupo">
+                        <label for="password">Contrasena</label>
+                        <input type="password" id="password" name="password" placeholder="Tu contrasena" required>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Entrar</button>
+                </form>
+
+                <p class="auth-link">
+                    No tienes cuenta? <a href="index.php?controller=auth&action=registro">Registrate aqui</a>
+                </p>
             </div>
-
-            <div class="form-grupo">
-                <label for="password">Contraseña</label>
-                <input type="password" id="password" name="password" required>
-            </div>
-
-            <button type="submit" class="btn-submit">Entrar</button>
-        </form>
-
-        <p class="auth-link">
-            ¿No tienes cuenta? <a href="index.php?controller=auth&action=registro">Regístrate aquí</a>
-        </p>
+        </div>
     </div>
 </section>
 

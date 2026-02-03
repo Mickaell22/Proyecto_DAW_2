@@ -1,6 +1,4 @@
--- Base de datos para Librería Online
--- Proyecto DAW - PHP + MySQL
--- Para Railway usar: USE railway;
+-- Creación de la base de datos
 
 -- Tabla de usuarios
 CREATE TABLE IF NOT EXISTS usuarios (
@@ -37,7 +35,7 @@ CREATE TABLE IF NOT EXISTS comentarios (
 
 -- Usuario administrador por defecto (password: admin123)
 INSERT INTO usuarios (nombre, email, password, rol) VALUES
-('Administrador', 'admin@libreria.com', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 'admin');
+('Administrador', 'admin@libreria.com', '$2y$12$5YdYVMS5XW3DDSimrqqgEuHN70PHnoKA6VtCZcZFzzfz17b7h7isC', 'admin');
 
 -- Libros de ejemplo
 INSERT INTO libros (titulo, autor, descripcion, genero, anio) VALUES
