@@ -2,7 +2,7 @@
 
 <section class="auth-section">
     <div class="auth-container">
-        <div class="auth-image-side">
+        <div class="auth-image-side registro-bg">
             <div class="icon-books">📖</div>
             <h2>Unete a nuestra comunidad</h2>
             <p class="frase">"Los libros son los amigos mas silenciosos y constantes; son los consejeros mas accesibles y los maestros mas pacientes."</p>

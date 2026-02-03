@@ -2,7 +2,7 @@
 
 <section class="auth-section">
     <div class="auth-container">
-        <div class="auth-image-side">
+        <div class="auth-image-side login-bg">
             <div class="icon-books">📚</div>
             <h2>Bienvenido de vuelta</h2>
             <p class="frase">"Un lector vive mil vidas antes de morir. El que nunca lee vive solo una."</p>
